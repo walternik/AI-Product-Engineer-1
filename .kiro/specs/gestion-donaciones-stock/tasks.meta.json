@@ -1,0 +1,264 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Preparar el proyecto y la base visual": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629123548
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629130463
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629504989
+      }
+    ],
+    "2.1 Escribir las pruebas y las funciones de fecha local": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629124911
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629509887
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629580277
+      }
+    ],
+    "2.2 Escribir las pruebas y el cálculo de estado de vencimiento": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125037
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629585145
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629653149
+      }
+    ],
+    "2.3 Escribir las pruebas y la validación de un lote": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125113
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629658255
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793630311717
+      }
+    ],
+    "2.4 Escribir las pruebas de orden y de totales": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125187
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793630316636
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793630408990
+      }
+    ],
+    "3.1 Escribir las pruebas y el acceso a localStorage": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125245
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793630414458
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793630492357
+      }
+    ],
+    "3.2 Escribir las pruebas, la semilla y el servicio de lotes": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125309
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793630497576
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793631199173
+      }
+    ],
+    "4.1 Crear marca, botones, estado, vacío y aviso": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125418
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793631204768
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793631534776
+      }
+    ],
+    "4.2 Crear la navegación entre las tres secciones": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125483
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793631540053
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793631684135
+      }
+    ],
+    "5. Implementar el formulario de alta y corrección": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125573
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793631690605
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793631855847
+      }
+    ],
+    "6. Implementar el listado de lotes y el resumen de stock": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125631
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793631861343
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793632571958
+      }
+    ],
+    "7. Implementar la confirmación de eliminación": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125694
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793632577514
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793632629387
+      }
+    ],
+    "8. Armar las tres pantallas con los componentes ya creados": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125762
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793632634835
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793633024340
+      }
+    ],
+    "9. Conectar el estado de la aplicación y las tres pantallas": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793629125825
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793633030878
+      },
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793633264468
+      }
+    ],
+    "2. Implementar las reglas de fechas, vencimiento, validación y totales": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793630409091
+      }
+    ],
+    "3. Implementar la persistencia y el servicio de lotes": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793631199254
+      }
+    ],
+    "4. Construir los componentes compartidos de la interfaz": [
+      {
+        "executionId": "6712a736-7255-4877-8eba-012a020bd405",
+        "chatSessionId": "sess_7f1555dd-5e37-45b4-af0f-1558f71c88db",
+        "timestamp": 1793631684243
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* ── Tokens de color de la marca ─────────────────────────────────────── */
+@theme {
+  /* Fondo general – superficie de la página */
+  --color-fondo: #F3E6A3;
+
+  /* Superficie – tarjetas, formulario, tabla y diálogos */
+  --color-superficie: #FFFDF7;
+
+  /* Hoja – navegación, sección activa y acción principal */
+  --color-hoja: #527A3B;
+  --color-hoja-oscuro: #3d5c2b;
+
+  /* Texto – títulos y texto principal */
+  --color-texto: #30452F;
+
+  /* Texto secundario – ayudas y descripciones */
+  --color-texto-secundario: #59645A;
+
+  /* Zanahoria – acento puntual */
+  --color-zanahoria: #E97836;
+
+  /* Cielo – avisos informativos */
+  --color-cielo: #8CCBDD;
+
+  /* Estados de vencimiento */
+  --color-buen-estado: #527A3B;
+  --color-proximo: #B45309;   /* ámbar oscuro */
+  --color-vencido: #991B1B;   /* rojo oscuro */
+
+  /* Destructivo */
+  --color-destructivo: #991B1B;
+
+  /* Tipografía */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ── Estilos base ─────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  min-height: 100dvh;
+}
+
+/* ── Versalitas solo para el subtítulo de la marca ───────────────────── */
+.marca-subtitulo {
+  font-variant: small-caps;
+}
+
+/* ── Foco visible accesible ──────────────────────────────────────────── */
+:focus-visible {
+  outline: 3px solid var(--color-hoja);
+  outline-offset: 2px;
+}
