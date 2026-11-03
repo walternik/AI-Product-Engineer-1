@@ -10,10 +10,24 @@ Aplicación web destinada a facilitar la organización de un banco de alimentos 
 
 Su objetivo es reducir el desperdicio de alimentos y mejorar la distribución de las donaciones entre familias beneficiarias.
 
-## Usuarios
+## Perfil de cliente ideal
 
-- Jorge: voluntario responsable de coordinar el banco de alimentos.
-- Otros voluntarios que colaboran temporalmente.
+El cliente ideal es un banco de alimentos barrial, con una sola sede y sin presupuesto para software ni personal de sistemas.
+
+- Atiende unas 40 familias.
+- Abre dos jornadas por semana.
+- Tiene un computador o una tablet compartidos en la mesa de recepción.
+- Los voluntarios rotan y nadie administra un servidor.
+
+## Personas
+
+### Lucía, voluntaria de turno
+
+Lucía tiene 58 años y anota las entregas en la jornada. Usa la tablet de la sede mientras la familia espera, y tiene poca experiencia con computadoras. Es quien usa la herramienta todos los días de atención. Necesita un formulario corto, botones grandes y mensajes claros.
+
+### Jorge, coordinador
+
+Jorge tiene 45 años y organiza el banco. No atiende el mostrador en cada entrega. Revisa los vencimientos antes de la jornada y, al cierre, quiere ver qué alimentos salieron y a qué familia. Usa la herramienta unas pocas veces por semana.
 
 ## Necesidades del usuario
 
@@ -32,15 +46,17 @@ Su objetivo es reducir el desperdicio de alimentos y mejorar la distribución de
 
 ## Alcance de esta etapa
 
-Se implementará exclusivamente el feature:
+Ya está implementada la gestión de donaciones y el control de stock por vencimiento, según `.kiro/specs/gestion-donaciones-stock/`.
 
-**Gestión de donaciones y control de stock por vencimiento.**
+Esta etapa implementa exclusivamente el feature:
 
-Debe permitir registrar donaciones, consultar los alimentos disponibles y visualizar los productos próximos a vencer o vencidos.
+**Registro de entregas.**
 
-La implementación debe ajustarse a la especificación aprobada de este feature.
+Debe permitir elegir un lote disponible, anotar la familia y la cantidad entregada, descontar esa cantidad del stock y consultar lo entregado en la jornada.
 
-Las funcionalidades de gestión de familias, entregas y distribución equitativa quedan fuera de esta etapa.
+La implementación debe ajustarse a la especificación de `.kiro/specs/registro-entregas/`.
+
+El padrón de familias y la distribución equitativa quedan fuera de esta etapa. El destinatario se anota como un nombre libre.
 
 ## Principios de experiencia de usuario
 
