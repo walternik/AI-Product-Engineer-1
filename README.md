@@ -1,6 +1,6 @@
 # Manos a la Obra
 
-Banco de alimentos comunitario. Esta etapa permite a los voluntarios registrar donaciones, consultar el stock y ver qué alimentos están próximos a vencer o ya vencieron.
+Banco de alimentos comunitario. Esta etapa permite a los voluntarios registrar donaciones, consultar el stock, ver qué alimentos están próximos a vencer o ya vencieron y registrar las entregas.
 
 ![Pantalla de Manos a la Obra](screenshot.png)
 
