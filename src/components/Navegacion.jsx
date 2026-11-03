@@ -1,12 +1,12 @@
 /**
- * Navegacion — barra de navegación entre las tres secciones de la aplicación.
+ * Navegacion — barra de navegación entre las secciones de la aplicación.
  *
  * Cada destino tiene un ícono SVG y una etiqueta de texto. El destino activo
  * se distingue visualmente con `--color-hoja` y mediante `aria-current="page"`
  * para lectores de pantalla.
  *
  * Props:
- *   - vistaActual: "stock" | "vencimientos" | "registrar"
+ *   - vistaActual: "stock" | "vencimientos" | "registrar" | "entregas"
  *   - onNavegar(vista): callback invocado al hacer clic en un destino
  */
 
@@ -55,6 +55,28 @@ function IconoVencimientos() {
   )
 }
 
+function IconoEntregas() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M3 7h13v10H3z" />
+      <path d="M16 10h4l1 2v5h-5" />
+      <circle cx="7.5" cy="18.5" r="1.5" />
+      <circle cx="17.5" cy="18.5" r="1.5" />
+    </svg>
+  )
+}
+
 function IconoRegistrar() {
   return (
     <svg
@@ -83,6 +105,7 @@ const DESTINOS = [
   { vista: 'stock',        etiqueta: 'Stock',        Icono: IconoStock        },
   { vista: 'vencimientos', etiqueta: 'Vencimientos', Icono: IconoVencimientos },
   { vista: 'registrar',    etiqueta: 'Registrar',    Icono: IconoRegistrar    },
+  { vista: 'entregas',     etiqueta: 'Entregas',     Icono: IconoEntregas     },
 ]
 
 // ── Componente ─────────────────────────────────────────────────────────────

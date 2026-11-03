@@ -4,7 +4,7 @@
  * Gestiona la navegación por estado (sin router), el diálogo de confirmación
  * de borrado y el aviso de error de lectura o escritura.
  *
- * Vistas posibles: "stock" | "vencimientos" | "registrar"
+ * Vistas posibles: "stock" | "vencimientos" | "registrar" | "entregas"
  * La vista inicial es "stock".
  *
  * Requirements: 1.2, 4.1, 4.3, 4.4, 4.5, 5.1, 5.4, 5.5, 6.2, 6.6
@@ -12,6 +12,7 @@
 
 import { useState } from 'react'
 import { useLotes } from './hooks/useLotes.js'
+import { useEntregas } from './hooks/useEntregas.js'
 import { fechaLocalHoy } from './utils/fechas.js'
 import Marca from './components/Marca.jsx'
 import Navegacion from './components/Navegacion.jsx'
@@ -20,6 +21,13 @@ import DialogoConfirmar from './components/DialogoConfirmar.jsx'
 import StockPage from './pages/StockPage.jsx'
 import VencimientosPage from './pages/VencimientosPage.jsx'
 import DonacionFormPage from './pages/DonacionFormPage.jsx'
+import EntregasPage from './pages/EntregasPage.jsx'
+
+const MENSAJES_ENTREGA = {
+  lectura: 'No se pudieron leer las entregas guardadas.',
+  escritura:
+    'No se pudo guardar el cambio. El stock y las entregas siguen como estaban.',
+}
 
 export default function App() {
   // ── Estado de navegación ─────────────────────────────────────────────────
@@ -33,7 +41,13 @@ export default function App() {
   const [loteAEliminar, setLoteAEliminar] = useState(null)
 
   // ── Hook central de lotes ────────────────────────────────────────────────
-  const { lotes, error, crear, actualizar, eliminar } = useLotes()
+  const { lotes, error, crear, actualizar, eliminar, reemplazarLotes } = useLotes()
+  const {
+    entregas,
+    error: errorEntregas,
+    registrar,
+    anular,
+  } = useEntregas()
 
   // Fecha de hoy, calculada una vez por render.
   const hoy = fechaLocalHoy()
@@ -110,6 +124,21 @@ export default function App() {
     setLoteAEliminar(null)
   }
 
+  function handleRegistrarEntrega(entrada) {
+    const resultado = registrar(entrada)
+    if (resultado.ok && resultado.lotes) {
+      reemplazarLotes(resultado.lotes)
+    }
+    return resultado
+  }
+
+  function handleAnularEntrega(id) {
+    const resultado = anular(id)
+    if (resultado.ok && resultado.lotes) {
+      reemplazarLotes(resultado.lotes)
+    }
+  }
+
   // ── Render ───────────────────────────────────────────────────────────────
 
   return (
@@ -130,9 +159,15 @@ export default function App() {
       {/* Contenido principal */}
       <div className="flex-1 mx-auto w-full max-w-3xl flex flex-col gap-4 px-0">
         {/* Aviso de error (lectura o escritura) */}
-        {error && (
-          <div className="px-4 pt-4">
-            <AvisoError tipo={error} />
+        {(error || errorEntregas) && (
+          <div className="px-4 pt-4 flex flex-col gap-3">
+            {error && <AvisoError tipo={error} />}
+            {errorEntregas && (
+              <AvisoError
+                tipo={errorEntregas}
+                mensaje={MENSAJES_ENTREGA[errorEntregas]}
+              />
+            )}
           </div>
         )}
 
@@ -161,6 +196,16 @@ export default function App() {
             loteInicial={loteEnEdicion}
             onGuardar={handleGuardar}
             onCancelar={handleCancelar}
+          />
+        )}
+
+        {vista === 'entregas' && (
+          <EntregasPage
+            lotes={lotes}
+            hoy={hoy}
+            entregas={entregas}
+            onGuardar={handleRegistrarEntrega}
+            onAnular={handleAnularEntrega}
           />
         )}
       </div>

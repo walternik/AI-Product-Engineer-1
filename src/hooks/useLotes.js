@@ -11,6 +11,7 @@
  *   - crear(entrada)      → { ok: true } | { ok: false, errores: object }
  *   - actualizar(id, entrada) → { ok: true } | { ok: false, errores: object }
  *   - eliminar(id)        → void
+ *   - reemplazarLotes(lotes) → actualiza la lista en memoria sin leer ni sembrar
  *
  * Requirements: 1.2, 4.1, 4.3, 4.4, 4.5, 5.1, 5.4, 5.5
  */
@@ -120,5 +121,15 @@ export function useLotes() {
     setError(null)
   }
 
-  return { lotes, error, crear, actualizar, eliminar }
+  /**
+   * Reemplaza la lista en memoria con el stock que devolvió una entrega.
+   * No vuelve a leer localStorage ni siembra datos de demostración.
+   * @param {object[]} lista
+   */
+  function reemplazarLotes(lista) {
+    setLotes(ordenarLotes(lista))
+    setError(null)
+  }
+
+  return { lotes, error, crear, actualizar, eliminar, reemplazarLotes }
 }

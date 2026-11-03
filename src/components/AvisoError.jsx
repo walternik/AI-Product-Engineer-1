@@ -3,6 +3,7 @@
  *
  * Props:
  *   - tipo: "lectura" | "escritura"
+ *   - mensaje: texto opcional que reemplaza el aviso de donaciones.
  *
  * Mensajes según el diseño:
  *   - lectura:   «No se pudieron leer las donaciones guardadas.
@@ -17,10 +18,10 @@ const MENSAJES = {
     'No se pudo guardar el cambio. La información del navegador sigue como estaba.',
 }
 
-export default function AvisoError({ tipo }) {
-  const mensaje = MENSAJES[tipo]
+export default function AvisoError({ tipo, mensaje }) {
+  const texto = mensaje ?? MENSAJES[tipo]
 
-  if (!mensaje) return null
+  if (!texto) return null
 
   return (
     <div
@@ -44,7 +45,7 @@ export default function AvisoError({ tipo }) {
           clipRule="evenodd"
         />
       </svg>
-      <p>{mensaje}</p>
+      <p>{texto}</p>
     </div>
   )
 }

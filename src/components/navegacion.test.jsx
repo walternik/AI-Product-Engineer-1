@@ -9,12 +9,13 @@ import Navegacion from './Navegacion.jsx'
 // ── Renderizado básico ────────────────────────────────────────────────────
 
 describe('Navegacion — destinos visibles', () => {
-  it('muestra las tres etiquetas de texto', () => {
+  it('muestra las etiquetas de texto de cada sección', () => {
     render(<Navegacion vistaActual="stock" onNavegar={() => {}} />)
 
     expect(screen.getByText('Stock')).toBeInTheDocument()
     expect(screen.getByText('Vencimientos')).toBeInTheDocument()
     expect(screen.getByText('Registrar')).toBeInTheDocument()
+    expect(screen.getByText('Entregas')).toBeInTheDocument()
   })
 })
 
@@ -104,5 +105,24 @@ describe('Navegacion — callback onNavegar', () => {
 
     expect(onNavegar).toHaveBeenCalledOnce()
     expect(onNavegar).toHaveBeenCalledWith('registrar')
+  })
+
+  it('marca Entregas con aria-current="page" cuando vistaActual="entregas"', () => {
+    render(<Navegacion vistaActual="entregas" onNavegar={() => {}} />)
+
+    expect(screen.getByRole('button', { name: /entregas/i })).toHaveAttribute(
+      'aria-current',
+      'page'
+    )
+  })
+
+  it('llama onNavegar con "entregas" al hacer clic en Entregas', async () => {
+    const onNavegar = vi.fn()
+    render(<Navegacion vistaActual="stock" onNavegar={onNavegar} />)
+
+    await userEvent.click(screen.getByRole('button', { name: /entregas/i }))
+
+    expect(onNavegar).toHaveBeenCalledOnce()
+    expect(onNavegar).toHaveBeenCalledWith('entregas')
   })
 })
